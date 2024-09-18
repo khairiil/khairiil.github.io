@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posttest 2 Pemrograman Web</title>
+    <style>
+        body {
+            background-color: rgb(71, 69, 69);
+        }
+        .logo {
+            width: 255px;
+            border-radius: 15px;
+        }
+        .box {
+            background-color: #e8e7e7;
+            width: 80%;
+            max-width: 700px;
+            margin: 50px;
+            border-radius: 15px;
+            padding: 30px;
+            position: relative;
+            top: 5px;
+            left: 330px;
+        }
+        .nasgor {
+            width: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: gray;
+            font-size: 15px;
+        }
+        .teh {
+            width: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: gray;
+            font-size: 15px;
+        }
+        .bca {
+            background-color: gray;
+            border-radius: 5px;
+            width: 120px;
+        }
+        .bri {
+            background-color: gray;
+            border-radius: 5px;
+            width: 120px;
+        }
+        .ovo {
+            background-color: gray;
+            border-radius: 5px;
+            width: 120px;
+        }
+        .gopay {
+            background-color: gray;
+            border-radius: 5px;
+            width: 120px;
+        }
+        .nama {
+            font-size: 12px;
+            position: relative;
+            left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <td>
+                <tr><img src="logo-resto.jpeg" alt="Logo Restoran" class="logo"></tr>
+            </td>
+        </table>
+    </center>
+    <div class="box">
+        <p><center><b><u>Bukti Pemesanan</u></b></center></p>
+        <table>
+            <tr><td>Nama Pelayan : <b>Khairil Syukri</b></td></tr>
+            <tr><td>Nama Pemesan : <b>Abdullah Azam</b></td></tr>
+            <tr><td>Tanggal Pemesanan : <input type="date" style="background-color: #e8e7e7;"></td></tr>
+            <tr><td>Alamat Pemesan : Jl. Merdeka No. 15, Kota Balikpapan</td></tr>
+            
+        </table> <hr>
+        <table>
+            <tr>
+                <td>
+                    <div class="nasgor">
+                        <img src="nasgor.jpeg" alt="Nasi Goreng" width="130px">
+                        <p><b>Nasi Goreng Agak Spesial</b></p>
+                        <p>Rp25.000,00</p>
+                    </div> 
+                </td>
+                <td width="40%" align="center">
+                    <b>Jumlah Pesanan :</b> 
+                    <input type="number" name="porsi" style="width:50px" min="0"> Porsi
+                </td>
+                <td width="40%" align="center">
+                    <b>Total Harga :</b> Rp25.000,00
+                </td>
+            </tr>
+        </table> <br>
+        <table>
+            <tr>
+                <td>
+                    <div class="teh">
+                        <img src="teh.jpeg" alt="Es Teh" width="130px">
+                        <p><b>Es Teh Hangat</b></p>
+                        <p>Rp5.000,00</p>
+                    </div>
+                </td>
+                <td width="40%" align="center">
+                    <b>Jumlah Pesanan :</b> 
+                    <input type="number" name="porsi" style="width:50px" min="0"> Porsi
+                </td>
+                <td width="40%" align="center">
+                    <b>Total Harga :</b> Rp5.000,00
+                </td>
+            </tr>
+        </table> <hr>
+        <table>
+            <tr>
+                <td width="80%" align="center"><b>Total Pesanan :</b></td>
+                <td>Rp30.000,00</td>
+            </tr>
+            <tr></tr>
+                <td width="80%" align="center"><b>Pajak :</b></td>
+                <td>Rp2.000,00</td>
+            </tr>
+            <tr></tr>
+                <td width="80%" align="center"><b>Total Tagihan :</b></td>
+                <td>Rp32.000,00</td>
+            </tr>
+        </table> <hr>
+        <table>
+            <tr><td colspan="4"><b>Metode Pembayaran :</b> </td></tr>
+            <tr>
+                <td colspan="2"><div class="bca"><input type="radio" name="mp">Bank BCA</div></td>
+                <td colspan="2"><div class="bri"><input type="radio" name="mp">Bank BRI</div></td>
+            </tr> 
+            <tr>
+                <td colspan="2"><div class="ovo"><input type="radio" name="mp">OVO</div></td>
+                <td colspan="2"><div class="gopay"><input type="radio" name="mp">GoPay</div></td>
+            </tr>
+        </table>
+        <div class="nama"><p>&copy; Khairil Syukri 2309106031</p></div>
+    </div>
+</body>
+</html>
