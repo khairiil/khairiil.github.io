@@ -1,0 +1,425 @@
+:root {
+    --warna: #b6895b;
+    --backgrounddark: #010101;
+    --backgroundlight: #fff;
+    --textlight: #010101;
+    --textdark: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--backgrounddark);
+    color: var(--textdark);
+    min-height: 2000px;
+}
+
+.header {
+    background-color: #1f1f1f;
+}
+
+.navbar-section {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-item {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-logo span {
+    color: var(--warna);
+    font-style: italic;
+}
+
+body.light-mode {
+    background-color: var(--backgroundlight);
+    color: var(--textlight);
+}
+
+body.light-mode .header {
+    background-color: #f5f5f5;
+}
+
+body.light-mode .navbar-section {
+    background-color: #e0e0e0;
+}
+
+body.light-mode .navbar-item a {
+    color: #000;
+}
+
+body.light-mode .navbar-logo {
+    color: var(--textlight);
+}
+
+.toggle-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--backgrounddark);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; 
+    border-radius: 50%;
+}
+
+body.light-mode .toggle-mode {
+    background-color: var(--backgroundlight);
+    color: black;
+}
+
+.header {
+    background-color: var(--backgrounddark);
+    color: var(--textdark);
+    padding: 5rem 7%;
+    text-align: center;
+    margin-bottom: 2rem; 
+    border-bottom: 1px solid #513c28; 
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header h1 span {
+    color: var(--warna);
+    font-style: italic;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 7%;
+    background-color: var(--backgrounddark);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar-logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--textdark);
+}
+
+.navbar-logo span {
+    color: var(--warna);
+    font-style: italic;
+}
+
+.navbar-item {
+    display: flex; 
+} 
+
+.navbar-item a {
+    color: var(--textdark);
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    color: var(--warna);
+} 
+
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; 
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-item.active {
+        display: flex;
+    }
+}
+
+.hero {
+    background-image: url('../aset/bg.jpeg');
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--backgrounddark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255,255,255,0) 50%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    font-size: 100px;
+}
+
+.hero .content span {
+    color: var(--warna);
+}
+
+.hero .content h1 {
+    font-size: 65px;
+    color: var(--textdark);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content p {
+    font-size: 20px;
+    margin-top: 14px;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .call {
+    margin-top: 16px;
+    display: inline-block;
+    padding: 16px 48px;
+    font-size: 20px;
+    color: var(--textdark);
+    background-color: var(--warna);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.hero .content a:hover {
+    color: var(--backgrounddark);
+}
+
+.hero .content span {
+    color: var(--warna);
+}
+
+.lomba {
+    padding: 5.5rem 7% 30rem;
+}
+
+.lomba h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 19px;
+}
+
+.lomba h2 span {
+    color: var(--warna);
+}
+
+.lomba p {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lomba {
+    padding: 5.5rem 7%;
+}
+
+.lomba h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 19px;
+}
+
+.lomba h2 span {
+    color: var(--warna);
+}
+
+.lomba p {
+    text-align: center;
+}
+
+.lomba .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.lomba-card {
+    text-align: center;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.lomba-card img {
+    width: 150px; 
+    height: 150px;
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
+
+.lomba-card .title {
+    font-size: 20px;
+    color: var(--textdark);
+    margin-top: 10px;
+}
+
+.lomba-card a {
+    text-decoration: none; 
+}
+
+.lomba-card a:hover .title {
+    color: var(--warna); 
+}
+
+.tentang-saya {
+    padding: 5rem 7% 30rem;
+}
+
+.tentang-saya h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 19px;
+}
+
+.tentang-saya span {
+    color: var(--warna);
+}
+
+.tentang-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.foto-profil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.tentang-info {
+    max-width: 500px;
+}
+
+.tentang-info p {
+    margin: 10px 0;
+}
+
+.sosial-media {
+    display: flex;
+    gap: 10px;
+}
+
+.sosial-media a {
+    text-decoration: none;
+    color: var(--warna);
+}
+
+.footer {
+    background-color: var(--backgrounddark);
+    color: var(--textdark);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: var(--textdark);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--warna);
+}
+
+body.light-mode .footer {
+    background-color: var(--backgroundlight);
+    color: var(--textlight);
+}
+
+body.light-mode .footer-links a {
+    color: var(--textlight);
+}
+
+body.light-mode .header h1,
+body.light-mode .header p,
+body.light-mode .navbar-item a,
+body.light-mode .lomba-card .title,
+body.light-mode .tentang-info p {
+    color: var(--textlight);
+}
+
+.login-button button {
+    padding: 10px 20px;
+    background-color: #b6895b; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.login-button button:hover {
+    background-color: #8a6744; 
+}
